@@ -271,8 +271,8 @@ To integrate Permission into your Xcode project using CocoaPods, specify it in y
 ```ruby
 use_frameworks!
 
-pod 'Permission/Camera'
-pod 'Permission/Notifications'
+pod 'Permission/Camera', :git => 'https://github.com/TSmallin/Permission.git'
+pod 'Permission/Notifications', :git => 'https://github.com/TSmallin/Permission.git'
 ```
 
 Please see `Permission.podspec` for more information about which subspecs are available.
