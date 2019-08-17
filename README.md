@@ -205,22 +205,6 @@ class PermissionsViewController: UIViewController, PermissionSetDelegate {
 
 ## Installation
 
-### Carthage
-
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
-
-You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
-
-```bash
-$ brew update
-$ brew install carthage
-```
-
-To integrate Permission into your Xcode project using Carthage, specify it in your `Cartfile`:
-
-```ogdl
-github "delba/Permission"
-```
 
 ##### Configuration
 
@@ -235,6 +219,7 @@ to the root of your project. For convenience, you can use
 you want to use, and compile the framework.
 
 To compile with only notifications and photos permissions:
+
 ```
 PERMISSION_ADDRESS_BOOK      = // PERMISSION_ADDRESS_BOOK
 PERMISSION_BLUETOOTH         = // PERMISSION_BLUETOOTH
