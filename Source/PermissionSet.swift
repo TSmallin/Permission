@@ -22,16 +22,16 @@
 // SOFTWARE.
 //
 
-open class PermissionSet {
+public class PermissionSet {
     
     /// The permissions in the set.
-    open let permissions: Set<Permission>
+    public let permissions: Set<Permission>
     
     /// The delegate of the permission set.
-    open weak var delegate: PermissionSetDelegate?
+    public weak var delegate: PermissionSetDelegate?
     
     /// The permission set status
-    open var status: PermissionStatus {
+    public var status: PermissionStatus {
         let statuses = permissions.map({ $0.status })
         
         for status in statuses where status == .denied {
