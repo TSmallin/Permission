@@ -89,9 +89,12 @@ internal class DisabledAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
         
-        title   = "\(permission) is currently disabled"
-        message = "Please enable access to \(permission) in the Settings app."
-        cancel  = "OK"
+//        title   = "\(permission) is currently disabled"
+//        message = "Please enable access to \(permission) in the Settings app."
+//        cancel  = "OK"
+        title   = "\(permission) 当前不可用"
+        message = "请在应用设置中允许访问 \(permission)"
+        cancel  = "确认"
     }
 }
 
@@ -112,10 +115,14 @@ internal class DeniedAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
         
-        title    = "Permission for \(permission) was denied"
-        message  = "Please enable access to \(permission) in the Settings app."
-        cancel   = "Cancel"
-        settings = "Settings"
+//        title    = "Permission for \(permission) was denied"
+//        message  = "Please enable access to \(permission) in the Settings app."
+//        cancel   = "Cancel"
+//        settings = "Settings"
+        title   = "访问 \(permission) 被拒绝"
+        message = "请在应用设置中允许访问 \(permission)"
+        cancel  = "取消"
+        settings = "设置"
     }
     
     @objc func settingsHandler() {
@@ -149,10 +156,14 @@ internal class PrePermissionAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
         
-        title   = "\(Bundle.main.name) would like to access your \(permission)"
-        message = "Please enable access to \(permission)."
-        cancel  = "Cancel"
-        confirm = "Confirm"
+//        title   = "\(Bundle.main.name) would like to access your \(permission)"
+//        message = "Please enable access to \(permission)."
+//        cancel  = "Cancel"
+//        confirm = "Confirm"
+        title   = "\(Bundle.main.name) 想要访问你的 \(permission)"
+        message = "请允许访问 \(permission)"
+        cancel  = "取消"
+        settings = "确认"
     }
     
     fileprivate func confirmHandler(_ action: UIAlertAction) {

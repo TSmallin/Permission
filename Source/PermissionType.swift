@@ -84,52 +84,52 @@ public enum PermissionType {
 extension PermissionType: CustomStringConvertible {
     public var description: String {
         #if PERMISSION_CONTACTS
-        if case .contacts = self { return "Contacts" }
+        if case .contacts = self { return "联系人" } //{ return "Contacts" }
         #endif
         
         #if PERMISSION_ADDRESS_BOOK
-        if case .addressBook = self { return "Address Book" }
+        if case .addressBook = self { return "地址簿" } //{ return "Address Book" }
         #endif
         
         #if PERMISSION_LOCATION
-        if case .locationAlways    = self { return "Location" }
-        if case .locationWhenInUse = self { return "Location" }
+        if case .locationAlways    = self { return "位置" } //{ return "Location" }
+        if case .locationWhenInUse = self { return "位置" } //{ return "Location" }
         #endif
         
         #if PERMISSION_NOTIFICATIONS
-        if case .notifications = self { return "Notifications" }
+        if case .notifications = self { return "通知" } //{ return "Notifications" }
         #endif
         
         #if PERMISSION_MICROPHONE
-        if case .microphone = self { return "Microphone" }
+        if case .microphone = self { return "麦克风" } //{ return "Microphone" }
         #endif
         
         #if PERMISSION_CAMERA
-        if case .camera = self { return "Camera" }
+        if case .camera = self { return "相机" } //{ return "Camera" }
         #endif
         
         #if PERMISSION_PHOTOS
-        if case .photos = self { return "Photos" }
+        if case .photos = self { return "照片" } //{ return "Photos" }
         #endif
         
         #if PERMISSION_REMINDERS
-        if case .reminders = self { return "Reminders" }
+        if case .reminders = self { return "提醒" } //{ return "Reminders" }
         #endif
         
         #if PERMISSION_EVENTS
-        if case .events = self { return "Events" }
+        if case .events = self { return "事件" } //{ return "Events" }
         #endif
         
         #if PERMISSION_BLUETOOTH
-        if case .bluetooth = self { return "Bluetooth" }
+        if case .bluetooth = self { return "蓝牙" } //{ return "Bluetooth" }
         #endif
         
         #if PERMISSION_MOTION
-        if case .motion = self { return "Motion" }
+        if case .motion = self { return "运动" } //{ return "Motion" }
         #endif
         
         #if PERMISSION_SPEECH_RECOGNIZER
-        if case .speechRecognizer = self { return "Speech Recognizer" }
+        if case .speechRecognizer = self { return "语音识别" } //{ return "Speech Recognizer" }
         #endif
         
         #if PERMISSION_SIRI
@@ -137,7 +137,7 @@ extension PermissionType: CustomStringConvertible {
         #endif
         
         #if PERMISSION_MEDIA_LIBRARY
-        if case .mediaLibrary = self { return "Media Library" }
+        if case .mediaLibrary = self { return "媒体库" } //{ return "Media Library" }
         #endif
         
         fatalError()
